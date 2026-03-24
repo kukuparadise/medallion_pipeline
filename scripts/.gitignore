@@ -1,0 +1,18 @@
+# python
+__pycache__/
+venv/
+*.py[cod]
+
+# dbt
+target/
+dbt_packages/
+logs/
+
+# dlz
+data/*.duckdb
+data/*.duckdb.wal
+data/raw/*.parquet
+
+# envs?
+.env
+profiles.yml

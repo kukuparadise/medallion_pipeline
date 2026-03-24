@@ -2,10 +2,10 @@ setup:
 	pip install dbt-duckdb pandas requests
 
 extract:
-	python scripts/extract_api.py
+	python3 scripts/extract_api.py
 
 run:
-	cd dbt_project && dbt build --profiles-dir ..
+	cd dbt_project && dbt build #--profiles-dir dbt/dbt_project
 
 all: setup extract run
 
