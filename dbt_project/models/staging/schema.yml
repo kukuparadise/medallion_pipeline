@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: stg_weather
+    columns:
+      - name: observation_date
+        tests:
+          - not_null
+          - unique  # weather data should not have duplicate dates
+      - name: max_temp_c
+        tests:
+          - not_null
+
+  - name: int_weather_refined
+    columns:
+      - name: temperature_category
+        tests:
+          - accepted_values:
+              values: ['Freezing', 'Cold', 'Mild', 'Hot']

@@ -1,0 +1,24 @@
+name: 'weather_analysis'
+version: '1.0.0'
+config-version: 2
+
+# This MUST match the name in profiles.yml
+profile: 'weather_project'
+
+model-paths: ["models"]
+test-paths: ["tests"]
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  weather_analysis:
+    # staging models are usually views ?
+    staging:
+      +materialized: view
+    # intermediate & marts usually tables ?
+    intermediate:
+      +materialized: table
+    marts:
+      +materialized: table
