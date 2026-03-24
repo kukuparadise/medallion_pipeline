@@ -2,5 +2,6 @@ weather_project:
   outputs:
     dev:
       type: duckdb
-      path: '../data/weather_warehouse.duckdb'
+      # absolute path to project dir to anchor it
+      path: "{{ env_var('PWD') }}/data/weather_warehouse.duckdb"
   target: dev

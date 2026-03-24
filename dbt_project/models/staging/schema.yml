@@ -16,4 +16,5 @@ models:
       - name: temperature_category
         tests:
           - accepted_values:
-              values: ['Freezing', 'Cold', 'Mild', 'Hot']
+              config:
+                values: ['Freezing', 'Cold', 'Mild', 'Hot']

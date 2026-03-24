@@ -522,3 +522,660 @@ parsing.
 [0m09:58:47.877853 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10389e530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1042f65c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10563d660>]}
 [0m09:58:47.878130 [debug] [MainThread]: Flushing usage events
 [0m09:58:48.450805 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:45:44.626487 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105432470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107906470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107905ff0>]}
+
+
+============================== 10:45:44.630571 | 8ee138f9-a5a6-45a7-9f83-bf081692544c ==============================
+[0m10:45:44.630571 [info ] [MainThread]: Running with dbt=1.11.7
+[0m10:45:44.631159 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'printer_width': '80', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'use_experimental_parser': 'False', 'invocation_command': 'dbt show --model fct_weather_summary --project-dir dbt_project --profiles-dir .', 'introspect': 'True', 'profiles_dir': '.', 'log_path': 'dbt_project/logs', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'debug': 'False', 'version_check': 'True', 'partial_parse': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'log_cache_events': 'False', 'log_format': 'default', 'warn_error': 'None', 'static_parser': 'True', 'target_path': 'None', 'fail_fast': 'False', 'cache_selected_only': 'False'}
+[0m10:45:44.631594 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+Usage of `--models`, `--model`, and `-m` is deprecated in favor of `--select` or
+`-s`.
+[0m10:45:44.631865 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '8ee138f9-a5a6-45a7-9f83-bf081692544c', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107905f90>]}
+[0m10:45:44.634277 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'weather_project'
+[0m10:45:44.634701 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ModelParamUsageDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m10:45:44.637941 [debug] [MainThread]: Resource report: {"command_name": "show", "command_success": false, "command_wall_clock_time": 0.089883626, "process_in_blocks": "0", "process_kernel_time": 0.149343, "process_mem_max_rss": "104136704", "process_out_blocks": "0", "process_user_time": 1.161248}
+[0m10:45:44.638287 [debug] [MainThread]: Command `dbt show` failed at 10:45:44.638217 after 0.09 seconds
+[0m10:45:44.638538 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105432470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106972800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106971150>]}
+[0m10:45:44.638794 [debug] [MainThread]: Flushing usage events
+[0m10:45:45.173268 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:46:19.099776 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10798a4d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111e0a410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111e09f90>]}
+
+
+============================== 10:46:19.103701 | ef4ffa9a-8927-4c5a-a4e9-3938da123ec9 ==============================
+[0m10:46:19.103701 [info ] [MainThread]: Running with dbt=1.11.7
+[0m10:46:19.104207 [debug] [MainThread]: running dbt with arguments {'log_path': '../dbt_project/logs', 'use_experimental_parser': 'False', 'printer_width': '80', 'partial_parse': 'True', 'quiet': 'False', 'no_print': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'profiles_dir': '.', 'empty': 'None', 'indirect_selection': 'eager', 'static_parser': 'True', 'log_cache_events': 'False', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'warn_error': 'None', 'use_colors': 'True', 'debug': 'False', 'version_check': 'True', 'introspect': 'True', 'invocation_command': 'dbt show --model fct_weather_summary --project-dir ../dbt_project --profiles-dir .', 'write_json': 'True'}
+[0m10:46:19.104581 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+Usage of `--models`, `--model`, and `-m` is deprecated in favor of `--select` or
+`-s`.
+[0m10:46:19.104848 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'ef4ffa9a-8927-4c5a-a4e9-3938da123ec9', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111e09f30>]}
+[0m10:46:19.441498 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ef4ffa9a-8927-4c5a-a4e9-3938da123ec9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111e09ff0>]}
+[0m10:46:19.508668 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ef4ffa9a-8927-4c5a-a4e9-3938da123ec9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112a37ca0>]}
+[0m10:46:19.526566 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m10:46:19.624528 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m10:46:19.749551 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m10:46:19.750152 [debug] [MainThread]: Partial parsing: updated file: weather_analysis://models/staging/schema.yml
+[0m10:46:20.202505 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ef4ffa9a-8927-4c5a-a4e9-3938da123ec9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113450640>]}
+[0m10:46:20.272268 [debug] [MainThread]: Wrote artifact WritableManifest to ../dbt_project/target/manifest.json
+[0m10:46:20.274333 [debug] [MainThread]: Wrote artifact SemanticManifest to ../dbt_project/target/semantic_manifest.json
+[0m10:46:20.276164 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ef4ffa9a-8927-4c5a-a4e9-3938da123ec9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11342e2f0>]}
+[0m10:46:20.276514 [info ] [MainThread]: Found 3 models, 4 data tests, 474 macros
+[0m10:46:20.276765 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ef4ffa9a-8927-4c5a-a4e9-3938da123ec9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11342e0b0>]}
+[0m10:46:20.277725 [info ] [MainThread]: 
+[0m10:46:20.277975 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m10:46:20.278174 [info ] [MainThread]: 
+[0m10:46:20.278506 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m10:46:20.282671 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_weather_warehouse_main'
+[0m10:46:20.327801 [debug] [ThreadPool]: Using duckdb connection "list_weather_warehouse_main"
+[0m10:46:20.328124 [debug] [ThreadPool]: On list_weather_warehouse_main: BEGIN
+[0m10:46:20.328351 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:46:20.341749 [debug] [ThreadPool]: SQL status: OK in 0.013 seconds
+[0m10:46:20.342026 [debug] [ThreadPool]: Using duckdb connection "list_weather_warehouse_main"
+[0m10:46:20.342264 [debug] [ThreadPool]: On list_weather_warehouse_main: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "weather_project", "target_name": "dev", "connection_name": "list_weather_warehouse_main"} */
+select
+      'weather_warehouse' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'weather_warehouse'
+  
+[0m10:46:20.350262 [debug] [ThreadPool]: SQL status: OK in 0.008 seconds
+[0m10:46:20.351520 [debug] [ThreadPool]: On list_weather_warehouse_main: ROLLBACK
+[0m10:46:20.352180 [debug] [ThreadPool]: Failed to rollback 'list_weather_warehouse_main'
+[0m10:46:20.352399 [debug] [ThreadPool]: On list_weather_warehouse_main: Close
+[0m10:46:20.353190 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ef4ffa9a-8927-4c5a-a4e9-3938da123ec9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11342e110>]}
+[0m10:46:20.354811 [debug] [Thread-1 (]: Began running node model.weather_analysis.fct_weather_summary
+[0m10:46:20.355134 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_weather_warehouse_main, now model.weather_analysis.fct_weather_summary)
+[0m10:46:20.355398 [debug] [Thread-1 (]: Began compiling node model.weather_analysis.fct_weather_summary
+[0m10:46:20.362674 [debug] [Thread-1 (]: Writing injected SQL for node "model.weather_analysis.fct_weather_summary"
+[0m10:46:20.363353 [debug] [Thread-1 (]: Began executing node model.weather_analysis.fct_weather_summary
+[0m10:46:20.369242 [debug] [Thread-1 (]: Using duckdb connection "model.weather_analysis.fct_weather_summary"
+[0m10:46:20.369571 [debug] [Thread-1 (]: On model.weather_analysis.fct_weather_summary: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_analysis.fct_weather_summary"} */
+
+  
+  with refined as (
+    select * from "weather_warehouse"."main"."int_weather_refined"
+)
+
+select
+    date_trunc('week', observation_date) as observation_week,
+    count(*) as days_in_week,
+    round(avg(max_temp_c), 2) as avg_max_temp,
+    max(max_temp_c) as peak_temp,
+    min(max_temp_c) as low_temp
+from refined
+group by 1
+order by 1 desc
+  
+  limit 5
+
+[0m10:46:20.369859 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:46:20.378967 [debug] [Thread-1 (]: SQL status: OK in 0.009 seconds
+[0m10:46:20.380958 [debug] [Thread-1 (]: On model.weather_analysis.fct_weather_summary: Close
+[0m10:46:20.381502 [debug] [Thread-1 (]: Finished running node model.weather_analysis.fct_weather_summary
+[0m10:46:20.382105 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:46:20.382345 [debug] [MainThread]: Connection 'model.weather_analysis.fct_weather_summary' was properly closed.
+[0m10:46:20.382825 [debug] [MainThread]: Command end result
+[0m10:46:20.402771 [debug] [MainThread]: Wrote artifact WritableManifest to ../dbt_project/target/manifest.json
+[0m10:46:20.404210 [debug] [MainThread]: Wrote artifact SemanticManifest to ../dbt_project/target/semantic_manifest.json
+[0m10:46:20.409977 [debug] [MainThread]: Wrote artifact RunExecutionResult to ../dbt_project/target/run_results.json
+[0m10:46:20.410905 [info ] [MainThread]: Previewing node 'fct_weather_summary':
+|    observation_week | days_in_week | avg_max_temp | peak_temp | low_temp |
+| ------------------- | ------------ | ------------ | --------- | -------- |
+| 2024-01-29 00:00:00 |            3 |         8.00 |    8.200… |   7.600… |
+| 2024-01-22 00:00:00 |            7 |         8.16 |   10.400… |   6.300… |
+| 2024-01-15 00:00:00 |            7 |         1.60 |    3.000… |  -0.200… |
+| 2024-01-08 00:00:00 |            7 |        -0.64 |    2.800… |  -4.100… |
+| 2024-01-01 00:00:00 |            7 |         4.91 |   10.600… |  -0.400… |
+
+[0m10:46:20.411363 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ModelParamUsageDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m10:46:20.413489 [debug] [MainThread]: Resource report: {"command_name": "show", "command_success": true, "command_wall_clock_time": 1.3919519, "process_in_blocks": "0", "process_kernel_time": 0.251015, "process_mem_max_rss": "161103872", "process_out_blocks": "0", "process_user_time": 2.188604}
+[0m10:46:20.413822 [debug] [MainThread]: Command `dbt show` succeeded at 10:46:20.413756 after 1.39 seconds
+[0m10:46:20.414079 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10798a4d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112a37ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1133f18a0>]}
+[0m10:46:20.414349 [debug] [MainThread]: Flushing usage events
+[0m10:46:20.953186 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:47:19.833466 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1114da530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11389a410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113899f90>]}
+
+
+============================== 10:47:19.837663 | 3d04bff7-13dd-4492-b875-25a249af0622 ==============================
+[0m10:47:19.837663 [info ] [MainThread]: Running with dbt=1.11.7
+[0m10:47:19.838196 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'printer_width': '80', 'write_json': 'True', 'debug': 'False', 'target_path': 'None', 'fail_fast': 'False', 'partial_parse': 'True', 'empty': 'None', 'invocation_command': 'dbt show --model fct_weather_summary --project-dir dbt_project --profiles-dir dbt_project', 'quiet': 'False', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'profiles_dir': 'dbt_project', 'log_path': 'dbt_project/logs', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'True', 'log_cache_events': 'False', 'log_format': 'default', 'no_print': 'None'}
+[0m10:47:19.838583 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+Usage of `--models`, `--model`, and `-m` is deprecated in favor of `--select` or
+`-s`.
+[0m10:47:19.838863 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '3d04bff7-13dd-4492-b875-25a249af0622', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113899f30>]}
+[0m10:47:20.176823 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3d04bff7-13dd-4492-b875-25a249af0622', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113899ff0>]}
+[0m10:47:20.244071 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3d04bff7-13dd-4492-b875-25a249af0622', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113899090>]}
+[0m10:47:20.262050 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m10:47:20.357341 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m10:47:20.482661 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m10:47:20.482987 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m10:47:20.483204 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m10:47:20.556902 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3d04bff7-13dd-4492-b875-25a249af0622', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113d59f30>]}
+[0m10:47:20.628921 [debug] [MainThread]: Wrote artifact WritableManifest to dbt_project/target/manifest.json
+[0m10:47:20.630670 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt_project/target/semantic_manifest.json
+[0m10:47:20.632455 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3d04bff7-13dd-4492-b875-25a249af0622', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114b01870>]}
+[0m10:47:20.632819 [info ] [MainThread]: Found 3 models, 4 data tests, 474 macros
+[0m10:47:20.633073 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3d04bff7-13dd-4492-b875-25a249af0622', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1074e1d80>]}
+[0m10:47:20.634047 [info ] [MainThread]: 
+[0m10:47:20.634313 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m10:47:20.634516 [info ] [MainThread]: 
+[0m10:47:20.634855 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m10:47:20.639089 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_weather_warehouse_main'
+[0m10:47:20.684535 [debug] [ThreadPool]: Using duckdb connection "list_weather_warehouse_main"
+[0m10:47:20.684876 [debug] [ThreadPool]: On list_weather_warehouse_main: BEGIN
+[0m10:47:20.685089 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:47:20.692559 [debug] [ThreadPool]: DuckDB adapter: duckdb error: IO Error: Cannot open file "/Users/eli/Repo/for applications/data/weather_warehouse.duckdb": No such file or directory
+[0m10:47:20.692834 [debug] [ThreadPool]: DuckDB adapter: Error running SQL: BEGIN
+[0m10:47:20.693045 [debug] [ThreadPool]: DuckDB adapter: Rolling back transaction.
+[0m10:47:20.693241 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:47:20.696604 [debug] [ThreadPool]: DuckDB adapter: duckdb error: IO Error: Cannot open file "/Users/eli/Repo/for applications/data/weather_warehouse.duckdb": No such file or directory
+[0m10:47:20.696858 [debug] [ThreadPool]: DuckDB adapter: Error running SQL: macro list_relations_without_caching
+[0m10:47:20.697058 [debug] [ThreadPool]: DuckDB adapter: Rolling back transaction.
+[0m10:47:20.697243 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:47:20.700799 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:47:20.701044 [debug] [MainThread]: Connection 'list_weather_warehouse_main' was properly closed.
+[0m10:47:20.701392 [error] [MainThread]: Encountered an error:
+IO Error: Cannot open file "/Users/eli/Repo/for applications/data/weather_warehouse.duckdb": No such file or directory
+[0m10:47:20.708042 [error] [MainThread]: Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/duckdb/connections.py", line 95, in exception_handler
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/sql/connections.py", line 147, in add_query
+    cursor = connection.handle.cursor()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/contracts/connection.py", line 96, in handle
+    self._handle.resolve(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/contracts/connection.py", line 120, in resolve
+    return self.opener(connection)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/duckdb/connections.py", line 53, in open
+    connection.handle = cls._ENV.handle()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/duckdb/environments/local.py", line 75, in handle
+    self.conn = self.initialize_db(self.creds, self._plugins)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/duckdb/environments/__init__.py", line 159, in initialize_db
+    conn = duckdb.connect(creds.path, read_only=False, config=config)
+_duckdb.IOException: IO Error: Cannot open file "/Users/eli/Repo/for applications/data/weather_warehouse.duckdb": No such file or directory
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/duckdb/connections.py", line 95, in exception_handler
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/base/impl.py", line 1320, in execute_macro
+    result = macro_function(**kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt_common/clients/jinja.py", line 427, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt_common/clients/jinja.py", line 395, in call_macro
+    return macro(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/jinja2/runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/jinja2/runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 21, in macro
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/jinja2/sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/jinja2/runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/clients/jinja.py", line 82, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt_common/clients/jinja.py", line 395, in call_macro
+    return macro(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/jinja2/runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/jinja2/runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 43, in macro
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/jinja2/sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/jinja2/runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/clients/jinja.py", line 82, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt_common/clients/jinja.py", line 395, in call_macro
+    return macro(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/jinja2/runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/jinja2/runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 52, in macro
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/jinja2/sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/jinja2/runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt_common/record.py", line 538, in record_replay_wrapper
+    return func_to_record(*call_args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/base/impl.py", line 471, in execute
+    return self.connections.execute(sql=sql, auto_begin=auto_begin, fetch=fetch, limit=limit)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/duckdb/connections.py", line 130, in execute
+    return super().execute(sql, auto_begin, fetch, limit)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/sql/connections.py", line 219, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/sql/connections.py", line 122, in add_query
+    self.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/sql/connections.py", line 245, in begin
+    self.add_begin_query()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/sql/connections.py", line 228, in add_begin_query
+    return self.add_query("BEGIN", auto_begin=False)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/sql/connections.py", line 131, in add_query
+    with self.exception_handler(sql):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/duckdb/connections.py", line 102, in exception_handler
+    self.rollback_if_open()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/base/connections.py", line 125, in rollback_if_open
+    if conn is not None and conn.handle and conn.transaction_open:
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/contracts/connection.py", line 96, in handle
+    self._handle.resolve(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/contracts/connection.py", line 120, in resolve
+    return self.opener(connection)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/duckdb/connections.py", line 53, in open
+    connection.handle = cls._ENV.handle()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/duckdb/environments/local.py", line 75, in handle
+    self.conn = self.initialize_db(self.creds, self._plugins)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/duckdb/environments/__init__.py", line 159, in initialize_db
+    conn = duckdb.connect(creds.path, read_only=False, config=config)
+_duckdb.IOException: IO Error: Cannot open file "/Users/eli/Repo/for applications/data/weather_warehouse.duckdb": No such file or directory
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/cli/requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/cli/requires.py", line 276, in wrapper
+    return func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/cli/requires.py", line 321, in wrapper
+    return func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/cli/requires.py", line 368, in wrapper
+    return func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/cli/main.py", line 396, in show
+    results = task.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/task/runnable.py", line 626, in run
+    result = self.execute_with_hooks(selected_uids)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/task/runnable.py", line 559, in execute_with_hooks
+    before_run_status = self.before_run(adapter, selected_uids)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/task/runnable.py", line 535, in before_run
+    self.populate_adapter_cache(adapter)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/task/runnable.py", line 525, in populate_adapter_cache
+    adapter.set_relations_cache(cachable_nodes)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/base/impl.py", line 651, in set_relations_cache
+    self._relations_cache_for_schemas(relation_configs, required_schemas)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/base/impl.py", line 627, in _relations_cache_for_schemas
+    for relation in future.result():
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt_common/utils/executor.py", line 16, in connected
+    return func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/sql/impl.py", line 193, in list_relations_without_caching
+    results = self.execute_macro(LIST_RELATIONS_MACRO_NAME, kwargs=kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/base/impl.py", line 1319, in execute_macro
+    with self.connections.exception_handler(f"macro {macro_name}"):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/duckdb/connections.py", line 102, in exception_handler
+    self.rollback_if_open()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/base/connections.py", line 125, in rollback_if_open
+    if conn is not None and conn.handle and conn.transaction_open:
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/contracts/connection.py", line 96, in handle
+    self._handle.resolve(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/contracts/connection.py", line 120, in resolve
+    return self.opener(connection)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/duckdb/connections.py", line 53, in open
+    connection.handle = cls._ENV.handle()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/duckdb/environments/local.py", line 75, in handle
+    self.conn = self.initialize_db(self.creds, self._plugins)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/duckdb/environments/__init__.py", line 159, in initialize_db
+    conn = duckdb.connect(creds.path, read_only=False, config=config)
+_duckdb.IOException: IO Error: Cannot open file "/Users/eli/Repo/for applications/data/weather_warehouse.duckdb": No such file or directory
+
+[0m10:47:20.709248 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ModelParamUsageDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m10:47:20.710887 [debug] [MainThread]: Resource report: {"command_name": "show", "command_success": false, "command_wall_clock_time": 0.95755965, "process_in_blocks": "0", "process_kernel_time": 0.26737, "process_mem_max_rss": "139739136", "process_out_blocks": "0", "process_user_time": 1.776548}
+[0m10:47:20.711229 [debug] [MainThread]: Command `dbt show` failed at 10:47:20.711158 after 0.96 seconds
+[0m10:47:20.711496 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1114da530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114b019c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113862ef0>]}
+[0m10:47:20.711770 [debug] [MainThread]: Flushing usage events
+[0m10:47:21.384754 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:48:08.196828 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107772470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ef24a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ef2020>]}
+
+
+============================== 10:48:08.200737 | e0d29d46-11da-4eab-a735-b2719accc731 ==============================
+[0m10:48:08.200737 [info ] [MainThread]: Running with dbt=1.11.7
+[0m10:48:08.201215 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'log_format': 'default', 'fail_fast': 'False', 'invocation_command': 'dbt show --model fct_weather_summary --project-dir dbt_project --profiles-dir dbt_project', 'target_path': 'None', 'profiles_dir': 'dbt_project', 'introspect': 'True', 'static_parser': 'True', 'warn_error': 'None', 'partial_parse': 'True', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': 'dbt_project/logs', 'write_json': 'True', 'log_cache_events': 'False', 'no_print': 'None', 'version_check': 'True', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'use_colors': 'True', 'empty': 'None', 'debug': 'False', 'use_experimental_parser': 'False', 'printer_width': '80'}
+[0m10:48:08.201602 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+Usage of `--models`, `--model`, and `-m` is deprecated in favor of `--select` or
+`-s`.
+[0m10:48:08.201882 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'e0d29d46-11da-4eab-a735-b2719accc731', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ef1fc0>]}
+[0m10:48:08.518367 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e0d29d46-11da-4eab-a735-b2719accc731', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1060dac20>]}
+[0m10:48:08.585336 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e0d29d46-11da-4eab-a735-b2719accc731', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e8f6d0>]}
+[0m10:48:08.601869 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m10:48:08.697812 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m10:48:08.823592 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m10:48:08.823925 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m10:48:08.824147 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m10:48:08.897726 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e0d29d46-11da-4eab-a735-b2719accc731', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108f91510>]}
+[0m10:48:08.969011 [debug] [MainThread]: Wrote artifact WritableManifest to dbt_project/target/manifest.json
+[0m10:48:08.971095 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt_project/target/semantic_manifest.json
+[0m10:48:08.972661 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e0d29d46-11da-4eab-a735-b2719accc731', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1092c2860>]}
+[0m10:48:08.973021 [info ] [MainThread]: Found 3 models, 4 data tests, 474 macros
+[0m10:48:08.973279 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e0d29d46-11da-4eab-a735-b2719accc731', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1095e2f80>]}
+[0m10:48:08.974269 [info ] [MainThread]: 
+[0m10:48:08.974515 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m10:48:08.974716 [info ] [MainThread]: 
+[0m10:48:08.975056 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m10:48:08.979333 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_weather_warehouse_main'
+[0m10:48:09.023939 [debug] [ThreadPool]: Using duckdb connection "list_weather_warehouse_main"
+[0m10:48:09.024243 [debug] [ThreadPool]: On list_weather_warehouse_main: BEGIN
+[0m10:48:09.024464 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:48:09.032466 [debug] [ThreadPool]: DuckDB adapter: duckdb error: IO Error: Cannot open file "/Users/eli/Repo/for applications/data/weather_warehouse.duckdb": No such file or directory
+[0m10:48:09.032734 [debug] [ThreadPool]: DuckDB adapter: Error running SQL: BEGIN
+[0m10:48:09.032940 [debug] [ThreadPool]: DuckDB adapter: Rolling back transaction.
+[0m10:48:09.033130 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:48:09.036432 [debug] [ThreadPool]: DuckDB adapter: duckdb error: IO Error: Cannot open file "/Users/eli/Repo/for applications/data/weather_warehouse.duckdb": No such file or directory
+[0m10:48:09.036671 [debug] [ThreadPool]: DuckDB adapter: Error running SQL: macro list_relations_without_caching
+[0m10:48:09.036875 [debug] [ThreadPool]: DuckDB adapter: Rolling back transaction.
+[0m10:48:09.037063 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:48:09.040484 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:48:09.040756 [debug] [MainThread]: Connection 'list_weather_warehouse_main' was properly closed.
+[0m10:48:09.041112 [error] [MainThread]: Encountered an error:
+IO Error: Cannot open file "/Users/eli/Repo/for applications/data/weather_warehouse.duckdb": No such file or directory
+[0m10:48:09.047550 [error] [MainThread]: Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/duckdb/connections.py", line 95, in exception_handler
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/sql/connections.py", line 147, in add_query
+    cursor = connection.handle.cursor()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/contracts/connection.py", line 96, in handle
+    self._handle.resolve(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/contracts/connection.py", line 120, in resolve
+    return self.opener(connection)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/duckdb/connections.py", line 53, in open
+    connection.handle = cls._ENV.handle()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/duckdb/environments/local.py", line 75, in handle
+    self.conn = self.initialize_db(self.creds, self._plugins)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/duckdb/environments/__init__.py", line 159, in initialize_db
+    conn = duckdb.connect(creds.path, read_only=False, config=config)
+_duckdb.IOException: IO Error: Cannot open file "/Users/eli/Repo/for applications/data/weather_warehouse.duckdb": No such file or directory
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/duckdb/connections.py", line 95, in exception_handler
+    yield
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/base/impl.py", line 1320, in execute_macro
+    result = macro_function(**kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt_common/clients/jinja.py", line 427, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt_common/clients/jinja.py", line 395, in call_macro
+    return macro(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/jinja2/runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/jinja2/runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 21, in macro
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/jinja2/sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/jinja2/runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/clients/jinja.py", line 82, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt_common/clients/jinja.py", line 395, in call_macro
+    return macro(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/jinja2/runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/jinja2/runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 43, in macro
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/jinja2/sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/jinja2/runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/clients/jinja.py", line 82, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt_common/clients/jinja.py", line 395, in call_macro
+    return macro(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/jinja2/runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/jinja2/runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 52, in macro
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/jinja2/sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/jinja2/runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt_common/record.py", line 538, in record_replay_wrapper
+    return func_to_record(*call_args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/base/impl.py", line 471, in execute
+    return self.connections.execute(sql=sql, auto_begin=auto_begin, fetch=fetch, limit=limit)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/duckdb/connections.py", line 130, in execute
+    return super().execute(sql, auto_begin, fetch, limit)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/sql/connections.py", line 219, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/sql/connections.py", line 122, in add_query
+    self.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/sql/connections.py", line 245, in begin
+    self.add_begin_query()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/sql/connections.py", line 228, in add_begin_query
+    return self.add_query("BEGIN", auto_begin=False)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/sql/connections.py", line 131, in add_query
+    with self.exception_handler(sql):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/duckdb/connections.py", line 102, in exception_handler
+    self.rollback_if_open()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/base/connections.py", line 125, in rollback_if_open
+    if conn is not None and conn.handle and conn.transaction_open:
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/contracts/connection.py", line 96, in handle
+    self._handle.resolve(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/contracts/connection.py", line 120, in resolve
+    return self.opener(connection)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/duckdb/connections.py", line 53, in open
+    connection.handle = cls._ENV.handle()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/duckdb/environments/local.py", line 75, in handle
+    self.conn = self.initialize_db(self.creds, self._plugins)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/duckdb/environments/__init__.py", line 159, in initialize_db
+    conn = duckdb.connect(creds.path, read_only=False, config=config)
+_duckdb.IOException: IO Error: Cannot open file "/Users/eli/Repo/for applications/data/weather_warehouse.duckdb": No such file or directory
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/cli/requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/cli/requires.py", line 276, in wrapper
+    return func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/cli/requires.py", line 321, in wrapper
+    return func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/cli/requires.py", line 368, in wrapper
+    return func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/cli/main.py", line 396, in show
+    results = task.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/task/runnable.py", line 626, in run
+    result = self.execute_with_hooks(selected_uids)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/task/runnable.py", line 559, in execute_with_hooks
+    before_run_status = self.before_run(adapter, selected_uids)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/task/runnable.py", line 535, in before_run
+    self.populate_adapter_cache(adapter)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/task/runnable.py", line 525, in populate_adapter_cache
+    adapter.set_relations_cache(cachable_nodes)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/base/impl.py", line 651, in set_relations_cache
+    self._relations_cache_for_schemas(relation_configs, required_schemas)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/base/impl.py", line 627, in _relations_cache_for_schemas
+    for relation in future.result():
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt_common/utils/executor.py", line 16, in connected
+    return func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/sql/impl.py", line 193, in list_relations_without_caching
+    results = self.execute_macro(LIST_RELATIONS_MACRO_NAME, kwargs=kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/base/impl.py", line 1319, in execute_macro
+    with self.connections.exception_handler(f"macro {macro_name}"):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/duckdb/connections.py", line 102, in exception_handler
+    self.rollback_if_open()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/base/connections.py", line 125, in rollback_if_open
+    if conn is not None and conn.handle and conn.transaction_open:
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/contracts/connection.py", line 96, in handle
+    self._handle.resolve(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/contracts/connection.py", line 120, in resolve
+    return self.opener(connection)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/duckdb/connections.py", line 53, in open
+    connection.handle = cls._ENV.handle()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/duckdb/environments/local.py", line 75, in handle
+    self.conn = self.initialize_db(self.creds, self._plugins)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/adapters/duckdb/environments/__init__.py", line 159, in initialize_db
+    conn = duckdb.connect(creds.path, read_only=False, config=config)
+_duckdb.IOException: IO Error: Cannot open file "/Users/eli/Repo/for applications/data/weather_warehouse.duckdb": No such file or directory
+
+[0m10:48:09.048770 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ModelParamUsageDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m10:48:09.050488 [debug] [MainThread]: Resource report: {"command_name": "show", "command_success": false, "command_wall_clock_time": 0.93175036, "process_in_blocks": "0", "process_kernel_time": 0.254007, "process_mem_max_rss": "138313728", "process_out_blocks": "0", "process_user_time": 1.775977}
+[0m10:48:09.050826 [debug] [MainThread]: Command `dbt show` failed at 10:48:09.050756 after 0.93 seconds
+[0m10:48:09.051099 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107772470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1095e0580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108fad210>]}
+[0m10:48:09.051374 [debug] [MainThread]: Flushing usage events
+[0m10:48:09.741616 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:51:37.558807 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1040b24a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105832440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105831fc0>]}
+
+
+============================== 10:51:37.562964 | 2b130aee-7ef9-4001-a353-53f8760cfb90 ==============================
+[0m10:51:37.562964 [info ] [MainThread]: Running with dbt=1.11.7
+[0m10:51:37.563426 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'no_print': 'None', 'invocation_command': 'dbt show --model fct_weather_summary --project-dir dbt_project --profiles-dir dbt_project', 'fail_fast': 'False', 'write_json': 'True', 'log_cache_events': 'False', 'log_format': 'default', 'cache_selected_only': 'False', 'partial_parse': 'True', 'profiles_dir': 'dbt_project', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': 'dbt_project/logs', 'debug': 'False', 'empty': 'None', 'indirect_selection': 'eager', 'version_check': 'True', 'use_colors': 'True', 'printer_width': '80', 'static_parser': 'True', 'target_path': 'None', 'warn_error': 'None'}
+[0m10:51:37.563798 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+Usage of `--models`, `--model`, and `-m` is deprecated in favor of `--select` or
+`-s`.
+[0m10:51:37.564079 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '2b130aee-7ef9-4001-a353-53f8760cfb90', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105831f60>]}
+[0m10:51:37.915917 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2b130aee-7ef9-4001-a353-53f8760cfb90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1058e79d0>]}
+[0m10:51:37.983023 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2b130aee-7ef9-4001-a353-53f8760cfb90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105831360>]}
+[0m10:51:38.000786 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m10:51:38.096724 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m10:51:38.186276 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m10:51:38.186671 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '2b130aee-7ef9-4001-a353-53f8760cfb90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b0ae00>]}
+[0m10:51:39.348633 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2b130aee-7ef9-4001-a353-53f8760cfb90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106320130>]}
+[0m10:51:39.458291 [debug] [MainThread]: Wrote artifact WritableManifest to dbt_project/target/manifest.json
+[0m10:51:39.460142 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt_project/target/semantic_manifest.json
+[0m10:51:39.461900 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2b130aee-7ef9-4001-a353-53f8760cfb90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1060ef670>]}
+[0m10:51:39.462260 [info ] [MainThread]: Found 3 models, 4 data tests, 474 macros
+[0m10:51:39.462518 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2b130aee-7ef9-4001-a353-53f8760cfb90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103c801c0>]}
+[0m10:51:39.463546 [info ] [MainThread]: 
+[0m10:51:39.463809 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m10:51:39.464010 [info ] [MainThread]: 
+[0m10:51:39.464360 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m10:51:39.468563 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_weather_warehouse_main'
+[0m10:51:39.511414 [debug] [ThreadPool]: Using duckdb connection "list_weather_warehouse_main"
+[0m10:51:39.511727 [debug] [ThreadPool]: On list_weather_warehouse_main: BEGIN
+[0m10:51:39.511949 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:51:39.526274 [debug] [ThreadPool]: SQL status: OK in 0.014 seconds
+[0m10:51:39.526542 [debug] [ThreadPool]: Using duckdb connection "list_weather_warehouse_main"
+[0m10:51:39.526784 [debug] [ThreadPool]: On list_weather_warehouse_main: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "weather_project", "target_name": "dev", "connection_name": "list_weather_warehouse_main"} */
+select
+      'weather_warehouse' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'weather_warehouse'
+  
+[0m10:51:39.538494 [debug] [ThreadPool]: SQL status: OK in 0.011 seconds
+[0m10:51:39.540349 [debug] [ThreadPool]: On list_weather_warehouse_main: ROLLBACK
+[0m10:51:39.541034 [debug] [ThreadPool]: Failed to rollback 'list_weather_warehouse_main'
+[0m10:51:39.541258 [debug] [ThreadPool]: On list_weather_warehouse_main: Close
+[0m10:51:39.542096 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2b130aee-7ef9-4001-a353-53f8760cfb90', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1060efa90>]}
+[0m10:51:39.544203 [debug] [Thread-1 (]: Began running node model.weather_analysis.fct_weather_summary
+[0m10:51:39.544573 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_weather_warehouse_main, now model.weather_analysis.fct_weather_summary)
+[0m10:51:39.544867 [debug] [Thread-1 (]: Began compiling node model.weather_analysis.fct_weather_summary
+[0m10:51:39.551759 [debug] [Thread-1 (]: Writing injected SQL for node "model.weather_analysis.fct_weather_summary"
+[0m10:51:39.552417 [debug] [Thread-1 (]: Began executing node model.weather_analysis.fct_weather_summary
+[0m10:51:39.558330 [debug] [Thread-1 (]: Using duckdb connection "model.weather_analysis.fct_weather_summary"
+[0m10:51:39.558660 [debug] [Thread-1 (]: On model.weather_analysis.fct_weather_summary: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "weather_project", "target_name": "dev", "node_id": "model.weather_analysis.fct_weather_summary"} */
+
+  
+  with refined as (
+    select * from "weather_warehouse"."main"."int_weather_refined"
+)
+
+select
+    date_trunc('week', observation_date) as observation_week,
+    count(*) as days_in_week,
+    round(avg(max_temp_c), 2) as avg_max_temp,
+    max(max_temp_c) as peak_temp,
+    min(max_temp_c) as low_temp
+from refined
+group by 1
+order by 1 desc
+  
+  limit 5
+
+[0m10:51:39.558943 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:51:39.570894 [debug] [Thread-1 (]: SQL status: OK in 0.012 seconds
+[0m10:51:39.573086 [debug] [Thread-1 (]: On model.weather_analysis.fct_weather_summary: Close
+[0m10:51:39.573646 [debug] [Thread-1 (]: Finished running node model.weather_analysis.fct_weather_summary
+[0m10:51:39.574259 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:51:39.574479 [debug] [MainThread]: Connection 'model.weather_analysis.fct_weather_summary' was properly closed.
+[0m10:51:39.574953 [debug] [MainThread]: Command end result
+[0m10:51:39.595658 [debug] [MainThread]: Wrote artifact WritableManifest to dbt_project/target/manifest.json
+[0m10:51:39.596879 [debug] [MainThread]: Wrote artifact SemanticManifest to dbt_project/target/semantic_manifest.json
+[0m10:51:39.602579 [debug] [MainThread]: Wrote artifact RunExecutionResult to dbt_project/target/run_results.json
+[0m10:51:39.604344 [info ] [MainThread]: Previewing node 'fct_weather_summary':
+|    observation_week | days_in_week | avg_max_temp | peak_temp | low_temp |
+| ------------------- | ------------ | ------------ | --------- | -------- |
+| 2024-01-29 00:00:00 |            3 |         8.00 |    8.200… |   7.600… |
+| 2024-01-22 00:00:00 |            7 |         8.16 |   10.400… |   6.300… |
+| 2024-01-15 00:00:00 |            7 |         1.60 |    3.000… |  -0.200… |
+| 2024-01-08 00:00:00 |            7 |        -0.64 |    2.800… |  -4.100… |
+| 2024-01-01 00:00:00 |            7 |         4.91 |   10.600… |  -0.400… |
+
+[0m10:51:39.604799 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ModelParamUsageDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m10:51:39.606475 [debug] [MainThread]: Resource report: {"command_name": "show", "command_success": true, "command_wall_clock_time": 2.1284304, "process_in_blocks": "0", "process_kernel_time": 0.284501, "process_mem_max_rss": "155844608", "process_out_blocks": "0", "process_user_time": 2.913713}
+[0m10:51:39.606790 [debug] [MainThread]: Command `dbt show` succeeded at 10:51:39.606726 after 2.13 seconds
+[0m10:51:39.607052 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1040b24a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103f202b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105831360>]}
+[0m10:51:39.607316 [debug] [MainThread]: Flushing usage events
+[0m10:51:40.144591 [debug] [MainThread]: An error was encountered while trying to flush usage events
